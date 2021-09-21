@@ -1,9 +1,10 @@
-package com.example.services;
+package com.example.bibliotekaapiservice.services;
 
-import com.example.DTO.BookDTO;
-import com.example.domain.Book;
-import com.example.mappers.BookMapper;
-import com.example.repositories.BookRepository;
+import com.example.bibliotekaapiservice.DTO.BookDTO;
+import com.example.bibliotekaapiservice.domain.Book;
+import com.example.bibliotekaapiservice.mappers.BookMapper;
+import com.example.bibliotekaapiservice.repositories.BookRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -20,14 +21,15 @@ import java.util.stream.StreamSupport;
 public class BookServiceImpl implements BookService {
 
 
-    private final BookMapper bookMapper;
+//    private   BookMapper bookMapper;
+//
+//    @Autowired
+//    private BookRepository bookRepository;
+//
+//    public BookServiceImpl( BookMapper bookMapper) {
+//        this.bookMapper = bookMapper;
+//    }
 
-    private final BookRepository bookRepository;
-
-    public BookServiceImpl(BookMapper bookMapper, BookRepository bookRepository) {
-        this.bookMapper = bookMapper;
-        this.bookRepository = bookRepository;
-    }
 
     @Override
     public void deleteBookById(Integer id) {

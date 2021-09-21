@@ -1,8 +1,8 @@
-package com.example.controllers;
+package com.example.bibliotekaapiservice.controllers;
 
 
-import com.example.DTO.BookDTO;
-import com.example.services.BookService;
+import com.example.bibliotekaapiservice.DTO.BookDTO;
+import com.example.bibliotekaapiservice.services.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

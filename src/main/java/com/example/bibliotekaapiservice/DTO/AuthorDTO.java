@@ -1,6 +1,6 @@
-package com.example.DTO;
+package com.example.bibliotekaapiservice.DTO;
 
-import com.example.domain.Book;
+import com.example.bibliotekaapiservice.domain.Book;
 
 import java.util.Set;
 

@@ -1,14 +1,14 @@
-package com.example.controllers;
+package com.example.bibliotekaapiservice.controllers;
 
 
-import com.example.DTO.CategoryDTO;
+import com.example.bibliotekaapiservice.DTO.CategoryDTO;
+import com.example.bibliotekaapiservice.services.CategoryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.services.CategoryService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +21,7 @@ public class CategoryController {
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
-
-   @GetMapping
-
+    @GetMapping("/getAllCategories")
    public ResponseEntity<List<CategoryDTO>> getAllCategories() {
        return new ResponseEntity<List<CategoryDTO>>(new ArrayList<CategoryDTO>(categoryService.getAllCategories()),
                HttpStatus.OK);

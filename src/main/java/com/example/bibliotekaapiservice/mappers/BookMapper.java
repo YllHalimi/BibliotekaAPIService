@@ -1,7 +1,7 @@
-package com.example.mappers;
+package com.example.bibliotekaapiservice.mappers;
 
-import com.example.DTO.BookDTO;
-import com.example.domain.Book;
+import com.example.bibliotekaapiservice.DTO.BookDTO;
+import com.example.bibliotekaapiservice.domain.Book;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -10,7 +10,5 @@ public interface BookMapper {
     BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
     BookDTO bookToBookDTO(Book book);
     Book bookDTOToBook(BookDTO bookDTO);
-
-
 }
 

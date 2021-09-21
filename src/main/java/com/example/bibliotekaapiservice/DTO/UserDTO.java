@@ -1,5 +1,5 @@
-package com.example.DTO;
-import com.example.domain.Personel;
+package com.example.bibliotekaapiservice.DTO;
+import com.example.bibliotekaapiservice.domain.Personel;
 
 import java.util.Date;
 

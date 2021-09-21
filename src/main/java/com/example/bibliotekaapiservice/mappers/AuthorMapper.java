@@ -1,7 +1,7 @@
-package com.example.mappers;
+package com.example.bibliotekaapiservice.mappers;
 
-import com.example.DTO.AuthorDTO;
-import com.example.domain.Author;
+import com.example.bibliotekaapiservice.DTO.AuthorDTO;
+import com.example.bibliotekaapiservice.domain.Author;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

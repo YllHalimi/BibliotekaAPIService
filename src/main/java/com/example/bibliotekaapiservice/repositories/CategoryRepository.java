@@ -1,6 +1,6 @@
-package com.example.repositories;
+package com.example.bibliotekaapiservice.repositories;
 
-import com.example.domain.Category;
+import com.example.bibliotekaapiservice.domain.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

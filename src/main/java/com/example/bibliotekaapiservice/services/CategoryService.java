@@ -1,6 +1,6 @@
-package com.example.services;
+package com.example.bibliotekaapiservice.services;
 
-import com.example.DTO.CategoryDTO;
+import com.example.bibliotekaapiservice.DTO.CategoryDTO;
 
 import java.util.List;
 

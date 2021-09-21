@@ -1,6 +1,6 @@
-package com.example.services;
+package com.example.bibliotekaapiservice.services;
 
-import com.example.DTO.BookDTO;
+import com.example.bibliotekaapiservice.DTO.BookDTO;
 
 import java.util.List;
 

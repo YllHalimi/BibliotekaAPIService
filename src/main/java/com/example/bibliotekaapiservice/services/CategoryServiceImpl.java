@@ -1,17 +1,16 @@
-package com.example.services;
+package com.example.bibliotekaapiservice.services;
 
-import com.example.DTO.CategoryDTO;
-import com.example.mappers.CategoryMapper;
-import com.example.repositories.CategoryRepository;
+import com.example.bibliotekaapiservice.DTO.CategoryDTO;
+import com.example.bibliotekaapiservice.mappers.CategoryMapper;
+import com.example.bibliotekaapiservice.repositories.CategoryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-
 @Service
 public class CategoryServiceImpl implements CategoryService{
-    private final CategoryMapper categoryMapper;
+    private final CategoryMapper categoryMapper = null;
     private final CategoryRepository categoryRepository;
 
 
@@ -27,8 +26,8 @@ public class CategoryServiceImpl implements CategoryService{
         return categoryMapper.categoryToCategoryDTO(categoryRepository.findByName(name));
     }
 
-    public CategoryServiceImpl(CategoryMapper categoryMapper, CategoryRepository categoryRepository) {
-        this.categoryMapper = categoryMapper;
+    public CategoryServiceImpl( CategoryRepository categoryRepository) {
+//        this.categoryMapper = categoryMapper;
         this.categoryRepository = categoryRepository;
 
     }

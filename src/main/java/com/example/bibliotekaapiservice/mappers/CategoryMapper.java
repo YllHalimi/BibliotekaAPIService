@@ -1,7 +1,7 @@
-package com.example.mappers;
+package com.example.bibliotekaapiservice.mappers;
 
-import com.example.DTO.CategoryDTO;
-import com.example.domain.Category;
+import com.example.bibliotekaapiservice.DTO.CategoryDTO;
+import com.example.bibliotekaapiservice.domain.Category;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -11,5 +11,6 @@ public interface CategoryMapper {
 
     CategoryDTO categoryToCategoryDTO(Category category);
     Category categoryDTOToCategory(Category categoryDTO);
+
 }
 

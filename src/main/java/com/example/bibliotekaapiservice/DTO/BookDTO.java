@@ -1,6 +1,6 @@
-package com.example.DTO;
+package com.example.bibliotekaapiservice.DTO;
 
-import com.example.domain.Author;
+import com.example.bibliotekaapiservice.domain.Author;
 import lombok.Data;
 
 import java.util.Date;
